@@ -22,35 +22,38 @@
   <!-- first parallax including navbar -->
   <div class="parallax container-fluid" id="para_one">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-xxxl navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#para_one">Sparta</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#para_two">Pillars</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#para_three">Theatre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#para_four">Goat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#para_five">Field</a>
-            </li>
-          </ul>
+    <div class="navbar_container">
+      <nav class="navbar navbar-expand-xxxl navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-2 fw-bold" href="#para_one">Sparta</a>
+          <button class="navbar-toggler btn-circle btn-md bg-secondary bg-opacity-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- switch this w/ a fab hamburger to change color to white -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_two">Pillars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_three">Theatre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_four">Goat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_five">Field</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- first parallax -->
-    <div class="jumbotron p-4 d-flex flex-column justify-content-center align-items-center">
-      <h1 class="display-4 fw-bold textone mt-auto opacity-75" id="para_one_header">This is Sparta</h1>
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-4 fw-bold textone mt-auto bg-opacity-75 bg-dark p-3" id="para_one_header">This is Sparta</h1>
       <!-- button to move to next parallax -->
-      <div class="button_container mt-auto mb-5 p-2">
+      <div class="button_container mt-auto mb-4">
         <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_two"><i class="fas fa-chevron-down fa-lg"></i></a>
       </div>
     </div>
@@ -61,8 +64,9 @@
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
       <!-- container for background -->
       <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone">Pillars</h1>
-        <p class="fs-4 text-white">The place where King Leonidas sparta-kicked a messenger into a pit.</p>
+        <h1 class="title_text display-4 fw-bold textone text-uppercase">Pillars</h1>
+        <p class="fs-4 text-muted">Scene I</p>
+        <p class="fs-4 text-white mb-4">The place where King Leonidas sparta-kicked a messenger into a pit.</p>
         <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
       </div>
       <!-- button to move to next parallax -->
@@ -77,8 +81,9 @@
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
       <!-- container for background -->
       <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone">Theatre</h1>
-        <p class="fs-4 text-white">A place where people also probably got sparta-kicked, but not into a pit.</p>
+        <h1 class="title_text display-4 fw-bold textone text-uppercase">Theatre</h1>
+        <p class="fs-4 text-muted">Scene II</p>
+        <p class="fs-4 text-white mb-4">A place where people also probably got sparta-kicked, but not into a pit.</p>
         <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
       </div>
       <!-- button to move to next parallax -->
@@ -93,8 +98,9 @@
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
       <!-- container for background -->
       <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone">Goat</h1>
-        <p class="fs-4 text-white">Just a goat. Often misunderstood. But never doubted.</p>
+        <h1 class="title_text display-4 fw-bold textone text-uppercase">Goat</h1>
+        <p class="fs-4 text-muted">Scene III</p>
+        <p class="fs-4 text-white mb-4">Just a goat. Often misunderstood. But never doubted.</p>
         <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
       </div>
       <!-- button to move to next parallax -->
@@ -109,7 +115,8 @@
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
       <!-- container for background -->
       <div class="d-flex flex-column align-items-center mt-auto mb-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone">Field</h1>
+        <h1 class="title_text display-4 fw-bold textone text-uppercase">Field</h1>
+        <p class="fs-4 text-muted">Scene IV</p>
         <p class="fs-4 text-white">A place where King Leonidas and his family would stroll through.</p>
         <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
       </div>

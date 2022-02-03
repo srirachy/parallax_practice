@@ -46,6 +46,13 @@ body, html{
     background-image: url('/IMG/field.jpg');
 }
 
+.navbar_container{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
 /* prevent dropdown from pushing content down */
 .navbar-nav{
     position: absolute;
@@ -54,6 +61,11 @@ body, html{
 /* diminish lag when toggling dropdown */
 .collapsing{
     transition: none;
+}
+
+/* add negative margin for muted text under each title */
+.title_text{
+    margin: -14px;
 }
 
 .jumbotron{
@@ -72,6 +84,16 @@ body, html{
     border-radius: 35px;
     font-size: 24px;
     line-height: 1.33;
+}
+
+/* medium circle button for toggler */
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .fa-chevron-down{
