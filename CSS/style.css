@@ -1,0 +1,18 @@
+/* general css for all pages */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/IMG/placeholder.jpg');
+}
+
+.textone{
+    font-family: 'Supermercado One', cursive;
+}
+
+.texttwo{
+    font-family: 'Open Sans Condensed', cursive;
+}
