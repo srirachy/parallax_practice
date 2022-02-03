@@ -1,18 +1,79 @@
-/* general css for all pages */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', serif;
 }
 
-body{
-    background-image: url('/IMG/placeholder.jpg');
+body, html{
+    height: 100%;
 }
 
 .textone{
-    font-family: 'Supermercado One', cursive;
+    font-family: 'Alegreya', cursive;
 }
 
-.texttwo{
-    font-family: 'Open Sans Condensed', cursive;
+#para_one_header{
+    color: #800202;
+    font-size: 160px;
+}
+
+.parallax{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#para_one{
+    background-image: url('/IMG/spartans.jpg');
+}
+
+#para_two{
+    background-image: url('/IMG/pillars.jpg');
+}
+
+#para_three{
+    background-image: url('/IMG/theatre.jpg');
+}
+
+#para_four{
+    background-image: url('/IMG/goat.jpg');
+}
+
+#para_five{
+    background-image: url('/IMG/field.jpg');
+}
+
+/* prevent dropdown from pushing content down */
+.navbar-nav{
+    position: absolute;
+}
+
+/* diminish lag when toggling dropdown */
+.collapsing{
+    transition: none;
+}
+
+.jumbotron{
+    height: 100%;
+}
+
+.title_text{
+    color: #800202;
+}
+
+/* large circle button */
+.btn-circle.btn-xl{
+    width: 70px;
+    height: 70px;
+    padding: 20px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.fa-chevron-down{
+    color: #ffffff;
 }

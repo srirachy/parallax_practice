@@ -12,48 +12,113 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Supermercado+One&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Alegreya:ital,wght@1,700&display=swap" rel="stylesheet">  
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/6f231be1f6.js" crossorigin="anonymous"></script>
   <!-- title -->
-  <title>Parallax</title>
+  <title>Sparta Parallax</title>
 </head>
 <body>
-  <!-- navbar -->
-  <nav class="navbar texttwo navbar-expand-xxxl navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+  <!-- first parallax including navbar -->
+  <div class="parallax container-fluid" id="para_one">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xxxl navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#para_one">Sparta</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#para_two">Pillars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#para_three">Theatre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#para_four">Goat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#para_five">Field</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- first parallax -->
+    <div class="jumbotron p-4 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-4 fw-bold textone mt-auto opacity-75" id="para_one_header">This is Sparta</h1>
+      <!-- button to move to next parallax -->
+      <div class="button_container mt-auto mb-5 p-2">
+        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_two"><i class="fas fa-chevron-down fa-lg"></i></a>
       </div>
     </div>
-  </nav>
-  <!-- jumbotron -->
-  <div class="p-5 mb-3 text-center d-flex justify-content-center" id="jumbotron">
-    <h1 class="display-4 fw-bold textone">asdf</h1>
   </div>
+
+  <!-- second parallax -->
+  <div class="parallax p-4 container-fluid" id="para_two">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- container for background -->
+      <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-4 fw-bold textone">Pillars</h1>
+        <p class="fs-4 text-white">The place where King Leonidas sparta-kicked a messenger into a pit.</p>
+        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+      </div>
+      <!-- button to move to next parallax -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_three"><i class="fas fa-chevron-down fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- third parallax -->
+  <div class="parallax p-4 container-fluid" id="para_three">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- container for background -->
+      <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-4 fw-bold textone">Theatre</h1>
+        <p class="fs-4 text-white">A place where people also probably got sparta-kicked, but not into a pit.</p>
+        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+      </div>
+      <!-- button to move to next parallax -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_four"><i class="fas fa-chevron-down fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- fourth parallax -->
+  <div class="parallax p-4 container-fluid" id="para_four">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- container for background -->
+      <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-4 fw-bold textone">Goat</h1>
+        <p class="fs-4 text-white">Just a goat. Often misunderstood. But never doubted.</p>
+        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+      </div>
+      <!-- button to move to next parallax -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_five"><i class="fas fa-chevron-down fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- fifth parallax -->
+  <div class="parallax container-fluid" id="para_five">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- container for background -->
+      <div class="d-flex flex-column align-items-center mt-auto mb-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-4 fw-bold textone">Field</h1>
+        <p class="fs-4 text-white">A place where King Leonidas and his family would stroll through.</p>
+        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    asdf
+  </footer>
 
   <!-- Javascript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
