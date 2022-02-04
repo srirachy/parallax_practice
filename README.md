@@ -1,7 +1,7 @@
-# Bootstrap Boilterplate
+# Parallax Practice
 
 ## Description
-A basic HTML5 Bootstrap template, including the required CSS and JS for Bootstrap to run.
+A proof-of-concept Parallax project which utilizes Bootstrap.
 
 ## Prerequisites
 - Understanding of [Bootstrap](https://getbootstrap.com/)

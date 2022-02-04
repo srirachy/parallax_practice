@@ -1,3 +1,4 @@
+/* general css for all elements */
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +6,28 @@
     font-family: 'Open Sans Condensed', serif;
 }
 
-body, html{
+/* set body and html height to 100% for parallax */
+body, html, .jumbotron{
     height: 100%;
 }
 
+html{
+    background-color: #201f1f;
+}
+
+/* provide some margin to follow parallax example page */
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* font for titles, might as well make em all maroon. */
 .textone{
     font-family: 'Alegreya', cursive;
-}
-
-#para_one_header{
     color: #800202;
-    font-size: 160px;
 }
 
+/* general parallax css */
 .parallax{
     height: 100%;
     background-attachment: fixed;
@@ -26,6 +36,11 @@ body, html{
     background-size: cover;
 }
 
+#para_one_header{
+    font-size: 120px;
+}
+
+/* individual parallax images */
 #para_one{
     background-image: url('/IMG/spartans.jpg');
 }
@@ -46,11 +61,15 @@ body, html{
     background-image: url('/IMG/field.jpg');
 }
 
+/* allow navbar to follow scrolling by using position: fixed, also provide some margin */
 .navbar_container{
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 0.5%;
 }
 
 /* prevent dropdown from pushing content down */
@@ -63,20 +82,12 @@ body, html{
     transition: none;
 }
 
-/* add negative margin for muted text under each title */
+/* add negative margin for muted text under each title in parallax 2-5 */
 .title_text{
     margin: -14px;
 }
 
-.jumbotron{
-    height: 100%;
-}
-
-.title_text{
-    color: #800202;
-}
-
-/* large circle button */
+/* large circle button for socials*/
 .btn-circle.btn-xl{
     width: 70px;
     height: 70px;
@@ -86,7 +97,7 @@ body, html{
     line-height: 1.33;
 }
 
-/* medium circle button for toggler */
+/* medium circle button for toggler and chevy buttons */
 .btn-circle.btn-md {
     width: 50px;
     height: 50px;
@@ -96,6 +107,7 @@ body, html{
     text-align: center;
 }
 
-.fa-chevron-down{
+/* some css for icons */
+.fab{
     color: #ffffff;
 }

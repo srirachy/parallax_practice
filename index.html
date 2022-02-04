@@ -4,7 +4,6 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- link stylesheet -->
@@ -15,22 +14,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Alegreya:ital,wght@1,700&display=swap" rel="stylesheet">  
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/6f231be1f6.js" crossorigin="anonymous"></script>
-  <!-- title -->
+  <!-- webpage title -->
   <title>Sparta Parallax</title>
 </head>
 <body>
-  <!-- first parallax including navbar -->
+
+  <!-- first parallax -->
   <div class="parallax container-fluid" id="para_one">
     <!-- navbar -->
     <div class="navbar_container">
       <nav class="navbar navbar-expand-xxxl navbar-dark">
         <div class="container-fluid">
+          <!-- left text of nav bar -->
           <a class="navbar-brand text-white fs-2 fw-bold" href="#para_one">Sparta</a>
-          <button class="navbar-toggler btn-circle btn-md bg-secondary bg-opacity-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- switch this w/ a fab hamburger to change color to white -->
-            <span class="navbar-toggler-icon"></span>
+          <!-- toggler on right side -->
+          <button class="navbar-toggler btn-circle btn-md bg-secondary bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- switched default span icon w/ bars (hamburger) from fa -->
+            <i class="fas fa-bars fa-md text-white"></i>
           </button>
+          <!-- navigation items container (shows when toggled) -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- nav items -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link text-white fs-4 fw-bold" href="#para_two">Pillars</a>
@@ -49,12 +53,12 @@
         </div>
       </nav>
     </div>
-    <!-- first parallax -->
+    <!-- container for text+button -->
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
-      <h1 class="display-4 fw-bold textone mt-auto bg-opacity-75 bg-dark p-3" id="para_one_header">This is Sparta</h1>
+      <h1 class="display-1 fw-bold textone mt-auto opacity-75 p-3" id="para_one_header">This is Sparta</h1>
       <!-- button to move to next parallax -->
       <div class="button_container mt-auto mb-4">
-        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_two"><i class="fas fa-chevron-down fa-lg"></i></a>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_two"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
       </div>
     </div>
   </div>
@@ -62,16 +66,16 @@
   <!-- second parallax -->
   <div class="parallax p-4 container-fluid" id="para_two">
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
-      <!-- container for background -->
+      <!-- container for text+buttons and give it a background for readability -->
       <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone text-uppercase">Pillars</h1>
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Pillars</h1>
         <p class="fs-4 text-muted">Scene I</p>
-        <p class="fs-4 text-white mb-4">The place where King Leonidas sparta-kicked a messenger into a pit.</p>
-        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+        <p class="fs-5 text-white mb-4">The place where King Leonidas sparta-kicked a messenger into a pit.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
       </div>
-      <!-- button to move to next parallax -->
+      <!-- next para button -->
       <div class="button_container mt-auto"></div>
-        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_three"><i class="fas fa-chevron-down fa-lg"></i></a>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_three"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
       </div>
     </div>
   </div>
@@ -79,16 +83,16 @@
   <!-- third parallax -->
   <div class="parallax p-4 container-fluid" id="para_three">
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
-      <!-- container for background -->
+      <!-- text+buttons container w/ background -->
       <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone text-uppercase">Theatre</h1>
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Theatre</h1>
         <p class="fs-4 text-muted">Scene II</p>
-        <p class="fs-4 text-white mb-4">A place where people also probably got sparta-kicked, but not into a pit.</p>
-        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+        <p class="fs-5 text-white mb-4">A place where people also probably got sparta-kicked, but not into a pit.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
       </div>
-      <!-- button to move to next parallax -->
+      <!-- next para button -->
       <div class="button_container mt-auto"></div>
-        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_four"><i class="fas fa-chevron-down fa-lg"></i></a>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_four"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
       </div>
     </div>
   </div>
@@ -96,16 +100,16 @@
   <!-- fourth parallax -->
   <div class="parallax p-4 container-fluid" id="para_four">
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
-      <!-- container for background -->
+      <!-- text+buttons container w/ background -->
       <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone text-uppercase">Goat</h1>
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Goat</h1>
         <p class="fs-4 text-muted">Scene III</p>
-        <p class="fs-4 text-white mb-4">Just a goat. Often misunderstood. But never doubted.</p>
-        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+        <p class="fs-5 text-white mb-4">Just a goat. Often misunderstood. But never doubted.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
       </div>
-      <!-- button to move to next parallax -->
+      <!-- next para button -->
       <div class="button_container mt-auto"></div>
-        <a class="btn btn-circle btn-xl bg-secondary opacity-75" href="#para_five"><i class="fas fa-chevron-down fa-lg"></i></a>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_five"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
       </div>
     </div>
   </div>
@@ -113,18 +117,36 @@
   <!-- fifth parallax -->
   <div class="parallax container-fluid" id="para_five">
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
-      <!-- container for background -->
+      <!-- text+buttons container w/ background -->
       <div class="d-flex flex-column align-items-center mt-auto mb-auto bg-dark p-5 bg-opacity-75">
-        <h1 class="title_text display-4 fw-bold textone text-uppercase">Field</h1>
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Field</h1>
         <p class="fs-4 text-muted">Scene IV</p>
-        <p class="fs-4 text-white">A place where King Leonidas and his family would stroll through.</p>
-        <button class="btn btn-dark btn-lg text-uppercase">learn more</button>
+        <p class="fs-5 text-white">A place where King Leonidas and his family would stroll through.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
       </div>
     </div>
   </div>
 
+  <!-- footer -->
   <footer>
-    asdf
+    <div class="container-fluid bg-danger p-5">
+      <div class="d-flex flex-column justify-content-center align-items-center p-4 mt-3">
+        <h2 class="display-6 fw-bold text-uppercase text-white">contact</h2>
+        <!-- socials, clickable but w/ no function -->
+        <div class="socials d-flex flex-row gap-4 p-5 mt-3">
+          <a class="btn btn-circle btn-xl bg-white bg-opacity-25" href="#" onclick="return false;"><i class="fab fa-twitter fa-lg"></i></a>
+          <a class="btn btn-circle btn-xl bg-white bg-opacity-25" href="#" onclick="return false;"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a class="btn btn-circle btn-xl bg-white bg-opacity-25" href="#" onclick="return false;"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <!-- copyright segment w/ clickable reference links but w/ no function -->
+        <p>
+          <span class="text-white opacity-50">&copy; srirachy. Design</span>
+          <a class="text-white" href="#" onclick="return false;">templated</a>
+          <span class="text-white opacity-50">. Images:</span>
+          <a class="text-white" href="#" onclick="return false;">Unsplash</a>
+          <span class="text-white opacity-50">.</span>
+        </p>
+      </div>
   </footer>
 
   <!-- Javascript: Bootstrap Bundle with Popper -->
