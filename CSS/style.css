@@ -1,18 +1,113 @@
-/* general css for all pages */
+/* general css for all elements */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', serif;
 }
 
+/* set body and html height to 100% for parallax */
+body, html, .jumbotron{
+    height: 100%;
+}
+
+html{
+    background-color: #201f1f;
+}
+
+/* provide some margin to follow parallax example page */
 body{
-    background-image: url('/IMG/placeholder.jpg');
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+/* font for titles, might as well make em all maroon. */
 .textone{
-    font-family: 'Supermercado One', cursive;
+    font-family: 'Alegreya', cursive;
+    color: #800202;
 }
 
-.texttwo{
-    font-family: 'Open Sans Condensed', cursive;
+/* general parallax css */
+.parallax{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#para_one_header{
+    font-size: 120px;
+}
+
+/* individual parallax images */
+#para_one{
+    background-image: url('/IMG/spartans.jpg');
+}
+
+#para_two{
+    background-image: url('/IMG/pillars.jpg');
+}
+
+#para_three{
+    background-image: url('/IMG/theatre.jpg');
+}
+
+#para_four{
+    background-image: url('/IMG/goat.jpg');
+}
+
+#para_five{
+    background-image: url('/IMG/field.jpg');
+}
+
+/* allow navbar to follow scrolling by using position: fixed, also provide some margin */
+.navbar_container{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 0.5%;
+}
+
+/* prevent dropdown from pushing content down */
+.navbar-nav{
+    position: absolute;
+}
+
+/* diminish lag when toggling dropdown */
+.collapsing{
+    transition: none;
+}
+
+/* add negative margin for muted text under each title in parallax 2-5 */
+.title_text{
+    margin: -14px;
+}
+
+/* large circle button for socials*/
+.btn-circle.btn-xl{
+    width: 70px;
+    height: 70px;
+    padding: 20px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+/* medium circle button for toggler and chevy buttons */
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* some css for icons */
+.fab{
+    color: #ffffff;
 }

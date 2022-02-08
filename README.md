@@ -1,7 +1,7 @@
-# Bootstrap Boilterplate
+# Parallax Practice
 
 ## Description
-A basic HTML5 Bootstrap template, including the required CSS and JS for Bootstrap to run.
+A proof-of-concept Parallax project which utilizes Bootstrap.
 
 ## Prerequisites
 - Understanding of [Bootstrap](https://getbootstrap.com/)
@@ -9,7 +9,7 @@ A basic HTML5 Bootstrap template, including the required CSS and JS for Bootstra
 
 ## Installation
 - [Git](https://git-scm.com/) must be installed
-- Clone repository `git clone git@github.com:srirachy/bootstrap_boilerplate.git`
+- Clone repository `git clone git@github.com:srirachy/parallax_practice.git`
 - Text editor or [VS Code](https://code.visualstudio.com/)
 
 ## License
